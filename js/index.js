@@ -8,7 +8,8 @@ function init() {
   const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#myCanvas')
   });
-  renderer.setClearColor(0x000000, 0);//背景を透明に
+
+  renderer.setClearColor( new THREE.Color(0x000000));//背景を透明に
   renderer.setSize(width, height);
   renderer.setPixelRatio(window.devicePixelRatio);
 
